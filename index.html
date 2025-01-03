@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enhance your photos with ease using our Photo Quality Enhancer. Choose between SD and HD quality for best results.">
+    <meta name="keywords" content="Photo Enhancer, Image Enhancer, SD Quality, HD Quality, Shivansh">
+    <meta name="author" content="Shivansh">
+    <title>Photo Quality Enhancer - by Shivansh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Photo Quality Enhancer</h1>
+            <p>Enhance your photos with SD or HD quality effortlessly.</p>
+        </header>
+
+        <section class="upload-section">
+            <input type="file" id="upload" accept="image/*" />
+            <canvas id="canvas"></canvas>
+        </section>
+
+        <section class="quality-selection">
+            <label for="quality">Select Quality:</label>
+            <select id="quality">
+                <option value="hd">HD</option>
+                <option value="sd">SD</option>
+            </select>
+        </section>
+
+        <section class="actions">
+            <button class="btn enhance-btn" onclick="enhanceImage()">Enhance Image</button>
+            <a id="downloadLink" href="#" download="enhanced-image-shivansh.png" class="btn download-btn">Download Enhanced Image</a>
+        </section>
+
+        <footer>
+            <p>Made with <span>&hearts;</span> by Shivansh</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
