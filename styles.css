@@ -1,0 +1,142 @@
+/* Reset default browser styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+.upload-section {
+    margin: 20px 0;
+}
+
+input[type="file"] {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+canvas {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    max-width: 100%;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.quality-selection {
+    margin: 20px 0;
+    color: #34495e;
+}
+
+.quality-selection label {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+select {
+    padding: 8px;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #e3f2fd;
+    border: 2px solid #81d4fa;
+    outline: none;
+}
+
+.actions {
+    margin: 20px 0;
+}
+
+button, a {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.enhance-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+}
+
+.enhance-btn:hover {
+    background-color: #2ecc71;
+}
+
+.download-btn {
+    background-color: #9b59b6;
+    color: white;
+    margin-top: 10px;
+    display: none; /* Hidden initially */
+}
+
+.download-btn:hover {
+    background-color: #8e44ad;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #95a5a6;
+}
+
+footer span {
+    color: #3498db;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p, .quality-selection label {
+        font-size: 0.9rem;
+    }
+
+    button, a {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
